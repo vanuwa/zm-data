@@ -1,0 +1,20 @@
+# curl --location 'https://api.zenmoney.ru/v8/diff'
+#--header 'Content-Type: application/json'
+#--header 'Authorization: Bearer <token>'
+#--data '{
+#    "currentClientTimestamp": 1694531541.413,
+#    "serverTimestamp": 0
+#}'
+< {%
+  request.variables.set("currentClientTimestamp", (new Date()).getTime() / 1000)
+%}
+POST https://{{host}}/v8/diff
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "currentClientTimestamp": {{currentClientTimestamp}},
+  "serverTimestamp": 0
+}
+
+###
