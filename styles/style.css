@@ -1,0 +1,32 @@
+@import "reset.css";
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    padding: 60px 30px 30px 30px;
+    color: #333;
+    background-color: #efefef;
+}
+
+body main {
+    min-height: 100%;
+}
+
+body main h1.body-main-title {
+    font-size: 36px;
+    color: #666;
+}
+
+body main h1.body-main-title span.accent {
+    color: #111;
+    font-weight: bolder;
+}
+
+body footer {
+    text-align: center;
+    font-size: 12px;
+}
