@@ -26,6 +26,16 @@ body main h1.body-main-title span.accent {
   font-weight: bolder;
 }
 
+body main .token-form-wrapper {
+  text-align: left;
+}
+
+body main .token-form-wrapper form input {
+  background-color: white;
+  padding: 3px;
+  border-radius: 5px;
+}
+
 body footer {
   text-align: center;
   font-size: 12px;
